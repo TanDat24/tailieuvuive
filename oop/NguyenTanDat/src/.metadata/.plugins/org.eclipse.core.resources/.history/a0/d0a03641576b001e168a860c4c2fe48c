@@ -1,0 +1,45 @@
+package bai12;
+import java.text.DecimalFormat;
+
+public class CD {
+	private final int maCD;
+	private String tuaCD;
+	private int soBaiHat;
+	private int giaThanh;
+	public CD(int maCD, String tuaCD, int soBaiHat, int giaThanh) {
+		super();
+		this.maCD = maCD;
+		this.tuaCD = tuaCD;
+		this.soBaiHat = soBaiHat;
+		this.giaThanh = giaThanh;
+	}
+	public String getTuaCD() {
+		return tuaCD;
+	}
+	public void setTuaCD(String tuaCD) {
+		this.tuaCD = tuaCD;
+	}
+	public int getSoBaiHat() {
+		return soBaiHat;
+	}
+	public void setSoBaiHat(int soBaiHat) {
+		this.soBaiHat = soBaiHat;
+	}
+	public int getGiaThanh() {
+		return giaThanh;
+	}
+	public void setGiaThanh(int giaThanh) {
+		this.giaThanh = giaThanh;
+	}
+	public int getMaCD() {
+		return maCD;
+	}
+	
+	@Override
+	public String toString() {
+		return "CD [maCD=" + maCD + ", tuaCD=" + tuaCD + ", soBaiHat=" + soBaiHat + ", giaThanh=" + giaThanh + "]";
+	}
+	
+	
+	
+}

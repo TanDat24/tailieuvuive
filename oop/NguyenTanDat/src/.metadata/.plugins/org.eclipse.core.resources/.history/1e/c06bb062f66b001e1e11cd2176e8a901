@@ -1,0 +1,12 @@
+package bai14;
+
+public class OderDetail {
+	private int quatity;
+	private Product product;
+	
+	public double calcTotalPrice() {
+		double tien = 0;
+		tien +=quatity*product.getPrice();
+		return tien;
+	}
+}

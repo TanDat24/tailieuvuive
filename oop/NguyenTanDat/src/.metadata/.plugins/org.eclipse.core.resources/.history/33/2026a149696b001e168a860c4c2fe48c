@@ -1,0 +1,53 @@
+package bai13;
+
+import java.util.Arrays;
+
+public class DanhSachCongNhan {
+	private int maxSize;
+	private int minSize;
+	private CongNhan[] cns;
+	
+	public DanhSachCongNhan(int maxSize) {
+		super();
+		this.maxSize = maxSize;
+		this.minSize = 0;
+		this.cns = new CongNhan[minSize];
+	}
+	public boolean addCN(CongNhan cn) {
+		if(minSize>=maxSize) 
+			return false;
+		cns[minSize] = cn;
+		minSize++;
+		return true;
+	}
+	@Override
+	public String toString() {
+		return "DanhSachCongNhan [maxSize=" + maxSize + ", minSize=" + minSize + ", cn=" + Arrays.toString(cns) + "]";
+	}
+
+	public int getMaxSize() {
+		return maxSize;
+	}
+
+	public void setMaxSize(int maxSize) {
+		this.maxSize = maxSize;
+	}
+
+	public int getMinSize() {
+		return minSize;
+	}
+
+	public void setMinSize(int minSize) {
+		this.minSize = minSize;
+	}
+
+	public CongNhan[] getCn() {
+		return cns;
+	}
+
+	public void setCn(CongNhan[] cn) {
+		this.cns = cn;
+	}
+	
+	
+}

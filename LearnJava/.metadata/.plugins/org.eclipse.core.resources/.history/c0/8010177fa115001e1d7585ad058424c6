@@ -1,0 +1,13 @@
+package testjava;
+
+import javax.swing.JFrame;
+
+public class Demo extends JFrame{
+	public Demo() {
+		super("^.^");
+	}
+	
+	public static void main(String[] args) {
+		new Demo().setVisible(true);
+	}
+}

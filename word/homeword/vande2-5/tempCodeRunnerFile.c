@@ -1,0 +1,1 @@
+else printf("\nKhong co thang nay!!!");

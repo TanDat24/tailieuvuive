@@ -1,0 +1,8 @@
+package bai2;
+
+public class TestPoint {
+	public static void name() {
+		ToaDo a = new ToaDo("Toa Do",7,3);
+		System.out.println(a.getThongTin());;
+	}
+}

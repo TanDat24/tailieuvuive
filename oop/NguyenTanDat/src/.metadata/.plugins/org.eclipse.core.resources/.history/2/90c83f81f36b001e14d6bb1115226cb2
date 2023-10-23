@@ -1,0 +1,52 @@
+package bai13;
+
+import java.util.Scanner;
+
+public class testCongNhan {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int max;
+		max = sc.nextInt();
+		DanhSachCongNhan dscn = new DanhSachCongNhan(max);
+		
+		int chon;
+		do {
+			System.out.println("1.them");
+			System.out.println("2.in");
+			System.out.println("3.so luong cong nhan");
+			System.out.println("4.xoa");
+			System.out.println("5.cong nhan sp tren 200");
+			System.out.println("6.sap xep");
+			System.out.println("0.thoat");
+			System.out.println("Nhap so muon thuc hien");
+			chon = sc.nextInt();
+			switch (chon) {
+			case 1: {
+				
+			}break;
+			case 2: {
+				
+			}break;
+			case 3: {
+	
+			}break;
+			case 4: {
+	
+			}break;
+			case 5: {
+	
+			}break;
+			case 6: {
+	
+			}break;
+			case 0: {
+	
+			}break;
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + chon);
+			}
+		} while (chon != 0);
+	}
+
+}

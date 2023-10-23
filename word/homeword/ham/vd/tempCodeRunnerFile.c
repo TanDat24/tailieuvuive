@@ -1,0 +1,1 @@
+int kq = tinhTong(n);

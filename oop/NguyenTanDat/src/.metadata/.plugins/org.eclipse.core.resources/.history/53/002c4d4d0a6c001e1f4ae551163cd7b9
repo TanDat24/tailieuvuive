@@ -1,0 +1,27 @@
+package baifake7;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class TestHangThucPham {
+	public static void tua() {
+		System.out.printf("%-7s %-10s %15s %-13s %-13s\n","Ma hang","Ten hang","Don gia","Ngay san xuat","Ngay het han");
+		System.out.printf("-----------------------------------------------------------------------------------------------------------");
+	}
+	public static void main(String[] args) throws Exception {
+		tua();
+		DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		try {
+			HangThucPham tp1 = new HangThucPham("001", "cc", 10000, LocalDate.parse("28/02/2003",df), LocalDate.parse("30/01/2023",df));
+			HangThucPham tp2 = new HangThucPham("002", "cc", 10000, LocalDate.parse("28/02/2003",df), LocalDate.parse("30/01/2023",df));
+			HangThucPham tp3 = new HangThucPham("003", "cc", 10000, LocalDate.parse("28/02/2003",df), LocalDate.parse("30/01/2023",df));
+			
+			System.out.println(tp1);
+			System.out.println(tp2);
+			System.out.println(tp3);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

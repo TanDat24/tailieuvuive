@@ -1,0 +1,10 @@
+package bai6;
+
+public class TestXe {
+
+	public static void main(String[] args) {
+		ThongTinDangKyXe xe1 = new ThongTinDangKyXe("nguyen van a", "Honda", 35000000.00, 100);
+		
+	}
+
+}

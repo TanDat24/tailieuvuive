@@ -1,0 +1,22 @@
+package bai14;
+
+public class Product {
+	private String description;
+	private String productID;
+	private double price;
+	@Override
+	public String toString() {
+		return "Product [description=" + description + ", productID=" + productID + ", price=" + price + "]";
+	}
+	public Product() {
+		
+	}
+	public Product(String description, String productID, double price) {
+		super();
+		this.description = description;
+		this.productID = productID;
+		this.price = price;
+	}
+	
+	
+}

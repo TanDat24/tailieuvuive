@@ -1,0 +1,18 @@
+package testjava;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Demo extends JFrame{
+	public Demo() {
+		super("^.^");
+		setSize(300,100);
+		setLocationRelativeTo(null);
+		
+		add(new JLabel("cc !!!"));
+	}
+	
+	public static void main(String[] args) {
+		new Demo().setVisible(true);
+	}
+}

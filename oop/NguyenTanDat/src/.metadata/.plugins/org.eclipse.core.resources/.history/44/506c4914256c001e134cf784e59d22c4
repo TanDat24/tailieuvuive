@@ -1,0 +1,53 @@
+package baifake7;
+
+import java.time.LocalDate;
+
+public class HangThucPham {
+	private String maHang;
+	private String tenHang;
+	private double donGia;
+	private LocalDate ngaySX;
+	private LocalDate ngayHH;
+	public HangThucPham(String maHang, String tenHang, double donGia, LocalDate ngaySX, LocalDate ngayHH) throws Exception {
+		super();
+		if(maHang.trim().equals(""))
+			throw new Exception("Loi: Mo rong!");
+		this.maHang = maHang;
+		this.tenHang = tenHang;
+		this.donGia = donGia;
+		this.ngaySX = ngaySX;
+		this.ngayHH = ngayHH;
+	}
+	public String getMaHang() {
+		return maHang;
+	}
+	public void setMaHang(String maHang) {
+		this.maHang = maHang;
+	}
+	public String getTenHang() {
+		return tenHang;
+	}
+	public void setTenHang(String tenHang) {
+		this.tenHang = tenHang;
+	}
+	public double getDonGia() {
+		return donGia;
+	}
+	public void setDonGia(double donGia) {
+		this.donGia = donGia;
+	}
+	public LocalDate getNgaySX() {
+		return ngaySX;
+	}
+	public void setNgaySX(LocalDate ngaySX) {
+		this.ngaySX = ngaySX;
+	}
+	public LocalDate getNgayHH() {
+		return ngayHH;
+	}
+	public void setNgayHH(LocalDate ngayHH) {
+		this.ngayHH = ngayHH;
+	}
+	
+	
+}

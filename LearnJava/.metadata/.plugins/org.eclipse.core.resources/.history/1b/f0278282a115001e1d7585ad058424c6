@@ -1,0 +1,15 @@
+package testjava;
+
+import javax.swing.JFrame;
+
+public class Demo extends JFrame{
+	public Demo() {
+		super("^.^");
+		setSize(200,100);
+		setLocationRelativeTo(null);
+	}
+	
+	public static void main(String[] args) {
+		new Demo().setVisible(true);
+	}
+}

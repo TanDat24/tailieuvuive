@@ -1,0 +1,14 @@
+package bai13;
+
+public class DanhSachCongNhan {
+	private int maxSize;
+	private int minSize;
+	private CongNhan[] cn;
+	
+	public DanhSachCongNhan(int maxSize) {
+		super();
+		this.maxSize = maxSize;
+		this.minSize = 0;
+		this.cn = new CongNhan[minSize];
+	}
+}

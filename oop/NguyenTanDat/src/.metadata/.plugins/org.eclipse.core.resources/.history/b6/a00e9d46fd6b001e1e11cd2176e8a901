@@ -1,0 +1,15 @@
+package bai6;
+
+public class TestXe {
+
+	public static void main(String[] args) throws Exception {
+		try {
+			ThongTinDangKyXe xe1 = new ThongTinDangKyXe("nguyen van a", "Honda",35000000.00, 100);
+			ThongTinDangKyXe xe2 = new ThongTinDangKyXe("nguyen van t", "ford",250000000.00, 3000);
+			ThongTinDangKyXe xe3 = new ThongTinDangKyXe("nguyen van h", "vinfast",1000000000.00, 1500);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

@@ -1,0 +1,1 @@
+printf("\nTong cac giai thua tu 1 den %d la %d", a, S);

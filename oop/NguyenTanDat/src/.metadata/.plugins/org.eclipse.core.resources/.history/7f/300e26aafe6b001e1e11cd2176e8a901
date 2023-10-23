@@ -1,0 +1,70 @@
+package bai6;
+
+public class ThongTinDangKyXe {
+	private String chuXe;
+	private String loaiXe;
+	private double triGiaXe;
+	private int dungTichXyLanh;
+	
+	public ThongTinDangKyXe(String chuXe, String loaiXe, double triGiaXe, int dungTichXyLanh) throws Exception {
+		super();
+		setChuXe(chuXe);
+		setLoaiXe(loaiXe);
+		setTriGiaXe(triGiaXe);
+		setDungTichXyLanh(dungTichXyLanh);
+	}
+	
+	public double thueXe() {
+		double giaThue = 0;
+		if(dungTichXyLanh<100) {
+			giaThue = 0.1;
+		} else if(dungTichXyLanh>=100 && dungTichXyLanh<200) {
+			giaThue = 0.3;
+		} else if(dungTichXyLanh>=200) {
+			giaThue = 0.5;
+		}
+		return triGiaXe*giaThue;
+	}
+	
+	public String getChuXe() {
+		return chuXe;
+	}
+
+	public void setChuXe(String chuXe) {
+		this.chuXe = chuXe;
+	}
+
+	public String getLoaiXe() {
+		return loaiXe;
+	}
+
+	public void setLoaiXe(String loaiXe) {
+		this.loaiXe = loaiXe;
+	}
+
+	public double getTriGiaXe() {
+		return triGiaXe;
+	}
+
+	public void setTriGiaXe(double triGiaXe) throws Exception {
+		if(triGiaXe<0)
+			throw new Exception("Loi gia xe < 0");
+		this.triGiaXe = triGiaXe;
+	}
+
+	public int getDungTichXyLanh() {
+		return dungTichXyLanh;
+	}
+
+	public void setDungTichXyLanh(int dungTichXyLanh) throws Exception {
+		if(dungTichXyLanh<0)
+			throw new Exception("Loi dung tich xe < 0");
+		this.dungTichXyLanh = dungTichXyLanh;
+	}
+
+	@Override
+	public String toString() {
+		System.out.println("%-20s %-20s %-20s %-20s %-20s");
+		return String.format("%-20s %-20s %-20d %-20.2f %-20.2f",chuXe,loaiXe,dungTichXyLanh,triGiaXe,thueXe());
+	}
+}

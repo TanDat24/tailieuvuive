@@ -1,0 +1,38 @@
+package bai13;
+
+public class CongNhan {	
+	private String mHo;
+	private String mTen;
+	private int mSoSp;
+	public CongNhan(String mHo, String mTen, int mSoSp) {
+		super();
+		setmHo(mHo);
+		setmTen(mTen);
+		setmSoSp(mSoSp);
+	}
+	public String getmHo() {
+		return mHo;
+	}
+	public void setmHo(String mHo) {
+		this.mHo = mHo;
+	}
+	public String getmTen() {
+		return mTen;
+	}
+	public void setmTen(String mTen) {
+		this.mTen = mTen;
+	}
+	public int getmSoSp() {
+		return mSoSp;
+	}
+	public void setmSoSp(int mSoSp) {
+		if(mSoSp>0)
+		this.mSoSp = mSoSp;
+	}
+	@Override
+	public String toString() {
+		return "CongNhan [mHo=" + mHo + ", mTen=" + mTen + ", mSoSp=" + mSoSp + "]";
+	}
+	
+	
+}

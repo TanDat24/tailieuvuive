@@ -1,0 +1,12 @@
+package baifake7;
+
+import java.time.LocalDate;
+
+public class TestHangThucPham {
+
+	public static void main(String[] args) {
+		HangThucPham tp1 = new HangThucPham("001", "cc", 10000, LocalDate.parse("28/02/2003",df), LocalDate.parse("30.01.2023",df));
+
+	}
+
+}

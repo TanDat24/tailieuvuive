@@ -1,0 +1,16 @@
+package bai12;
+
+public class listCD {
+	private int max;
+	private int min;
+	private CD[] cd;
+	public listCD(int max, int min, CD[] cd) {
+		super();
+		this.max = max;
+		this.min = 0;
+		this.cd = new CD[max];
+	}
+	
+	
+	
+}

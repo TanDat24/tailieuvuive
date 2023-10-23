@@ -1,0 +1,21 @@
+package bai12;
+
+import java.util.Scanner;
+
+public class testCD {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("so luong CD");
+		int max = sc.nextInt();
+		
+		listCD ls = new listCD(max);
+		
+		int chon;
+		do {
+			
+		} while (chon !=0);
+
+	}
+
+}
